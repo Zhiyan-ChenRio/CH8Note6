@@ -1,2 +1,51 @@
-# Chapter 8/Notes 6
-## 
+#  Chapter 8/Notes 6
+## 8.1,8.2,8.3
+    Operating system: An operating system is vital software that manages a computer's memory, processes, software, and hardware, facilitating user interaction and rendering a computer functional.
+    The operating system's job: The computer's operating system orchestrates the allocation of resources like CPU, memory, and storage to ensure smooth operation of multiple concurrent programs.
+    Types of operating systems:Operating systems, such as Microsoft Windows, macOS, and Linux, provide graphical user interfaces (GUIs) that enable users to interact with their computers through icons, buttons, and menus displayed on the screen.
+    Microsoft Windows:Microsoft's Windows operating system, with multiple versions such as Windows 10 and Windows Server, dominates the global market and serves various purposes, from personal computing to cloud-based information hosting.
+    Linux: Linux is a free and open-source family of operating systems that can be modified and distributed by anyone, in contrast to proprietary systems like Windows.
+    The AWS Compute service:In Amazon Web Services, there are four broad categories of compute services. These are: Virtual Machines, Containers, Serverless andPlatform as a Service
+    Virtual Machines: Amazon EC2 is a cloud service that provides scalable computing power, allowing developers to easily configure and manage virtual machines in Amazon's reliable environment for Infrastructure as a Service (IaaS) applications.
+    Serverless:AWS Lambda is a serverless computing service that allows you to run code without managing servers, paying only for the actual compute time used, and is part of the broader concept of serverless computing where code deployment is event-driven and infrastructure management is abstracted.
+    Containers: Amazon Web Services offers container services for efficient workload management, with AWS Fargate simplifying administration for those new to containers.
+    Platform as a Service: Platform as a Service (PaaS), like AWS Elastic Beanstalk, empowers developers to focus on coding and application development while relinquishing control over the underlying infrastructure.
+## 8.4
+    Selecting Compute Resources: Choosing the right compute resources, balancing performance and cost, helps achieve more with less. Make informed decisions by aligning workload needs with resource choices.
+    Instances: Cloud instances are virtual servers in AWS that can be easily customized for performance and features, providing flexibility to adapt to changing computing requirements.
+    Containers: Containers enable isolated execution of applications and their dependencies, and AWS offers options like Fargate, EC2, ECS, and EKS for managing them in the cloud.
+    Functions: Functions, such as AWS Lambda, decouple code execution from server management, enabling code execution without the need for running server instances.
+    Best Practices for Selecting Compute Resources:
+    Evaluate the available compute options: Assess compute options: Understand how instances, containers, and functions perform and their impact on your workload.
+    Understand the available compute configuration options: To maximize system efficiency, it's crucial to comprehend how various compute configuration options, such as instance types, features (like GPUs and I/O), and tenancy models, align with and benefit your specific workload.
+    Collect compute-related metrics: Recording and tracking resource utilization provides essential data for making precise resource requirement assessments and optimizing computer system performance.
+    Determine the required configuration by right-sizing: Assess your workload's performance characteristics, including memory, network, and CPU usage, to choose the most appropriate resources, such as r-family instances for memory-intensive workloads or elastic container systems for bursting tasks
+    Use the available elasticity of resources: Leveraging cloud elasticity involves dynamically adjusting resources based on workload demands and compute metrics to optimize performance and cost efficiency.
+    Re-evaluate compute needs based on metrics: Continuously monitor system-level metrics to adapt and optimize your compute environment based on your workload's evolving requirements, such as switching to more suitable instance types or sizes when necessary, for improved performance and efficiency.
+## 8.5, 8.6, 8.7, 8.8, 8.10
+    What is a virtual machine: A virtual machine (VM) is a software-based computer that exists within another computer’s operating system, often used for the purposes of testing, backing up data, or running SaaSLinks to an external site. applications. 
+    What is an operating system: Operating systems like Mac OSX, Windows, Linux, and Android manage a computer's hardware resources, enabling users to perform tasks and run software applications on their traditional computers.
+    What is a Hypervisor:A hypervisor is a software or hardware system that enables virtual machines (VMs) to run on a host machine, each with its own set of resources, including an independent guest operating system, while sharing the host machine's physical resources.
+    Amazon's Elastic Compute Cloud: Amazon EC2, a core component of AWS, allows users to rent virtual computers, known as instances, to run their applications with scalability, cost-efficiency, and full administrative control over guest operating systems.
+    EC2 Instance Types: Amazon EC2 offers a variety of instance types, each with specific CPU, memory, storage, and network capabilities, allowing users to choose the most suitable configuration for their applications and workloads.
+    Amazon Machine Images (AMI):Amazon Machine Images (AMIs) are pre-configured templates for virtual machines, enabling quick instance launches and multiple instances with the same or different configurations, while encompassing elements like snapshots, permissions, and block device mappings.
+    EC2 Pricing: Amazon EC2 offers a free trial and five payment options, including On-Demand, Savings Plans, Reserved Instances, Spot Instances, and Dedicated Hosts.
+    Four Pillars of Cost Optimization: 
+    Pillar 1. Right Size:Optimize resource utilization by choosing the right instance types, aligning provisioning with actual needs, and using monitoring tools like Amazon CloudWatch to identify opportunities for downsizing or turning off idle servers while maintaining performance.
+    Pillar 2 Increase elasticity: Cloud computing offers cost optimization and flexibility by automatically adjusting resources to match dynamic usage, allowing for the efficient use of non-production instances by turning them off or hibernating when not in active use.
+    Pillar 3. Leverage the right pricing model: AWS provides diverse pricing models to optimize costs, such as on-demand, spot instances, and reserved instances, and recommends evaluating application architecture to potentially reduce expenses by using services like AWS Lambda when feasible.
+    Pillar 4. Optimize storage: AWS offers cost optimization strategies for storage, including selecting appropriate storage services, resizing volumes, choosing cost-effective options, managing snapshots, and automating data lifecycle policies.
+## 8.11, 8.12, 8.13,8.14, 8.15, 8.16, 8.17, 8.18, 8.19
+    What are Containers: A Container in cloud computing is a virtualization method that packages applications and their dependencies for efficient, isolated execution, ensuring reliability and consistency across distributed platforms while enhancing resource control and storage security in online services.
+    Docker:A container is a self-contained software package that includes code and all its dependencies, ensuring consistent and reliable application execution across different computing environments, with Docker container images serving as lightweight, standalone units encompassing everything needed to run an application.
+    Kubernetes:Kubernetes is an open-source platform that simplifies the management and deployment of containerized applications across various environments while providing automation and scalability.
+    Containers vs Virtual Machines:Containers are highly portable, as they can run on various Linux OS systems, including laptops, virtual machines, EC2 instances, and bare metal servers, unlike virtual machines which rely on hypervisors.
+    AWS Container Services: When using containers on AWS, you must decide between serverless AWS Fargate or self-managed Amazon EC2 for your compute needs and select an appropriate container orchestrator.
+    Amazon Elastic Container Service (ECS): Amazon Elastic Container Service (Amazon ECS) is a container management service that simplifies running Docker containers on clusters, offering serverless (Fargate) or self-managed (EC2) options, seamless integration with Amazon services, and flexible container orchestration.
+    Amazon Elastic Kubernetes Service (EKS): Amazon EKS is a managed AWS service that simplifies Kubernetes deployment and operation, offering high availability, automated management, and seamless integration with AWS services for containerized application management.
+    Amazon Elastic Container Registry (ECR):Amazon Elastic Container Registry (Amazon ECR) is a fully managed Docker container registry that integrates with Amazon ECS, supports secure image storage and access, and simplifies Docker container management for developers.
+    What is Serverless Computing:Serverless computing charges users based on actual usage rather than fixed server or bandwidth allocations, allowing for flexible and cost-effective scaling of backend services.
+    AWS Lambda:AWS Lambda is a serverless compute service that executes code in response to events or on a scheduled basis, with automatic scaling and cost based on compute time.
+    What is Platform as a Service (PaaS): Platform as a Service (PaaS), like AWS Elastic Beanstalk, simplifies application management by handling infrastructure concerns, enabling quick deployment and scaling of web applications.
+    AWS Elastic Beanstalk:AWS Elastic Beanstalk is a platform-as-a-service (PaaS) that streamlines the deployment and management of web applications while providing flexibility and control over underlying AWS resources, all without incurring additional charges beyond resource usage.
+
